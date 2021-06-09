@@ -15,8 +15,10 @@ struct ContentView: View {
             Text("Hello, world!")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-            Slider(value: $rotation, in: 0...360, step: 0.1)
                 .rotationEffect(.degrees(rotation))
+                .animation(.easeInOut)
+            Slider(value: $rotation, in: 0...360, step: 0.1)
+                
         }
     }
 }
