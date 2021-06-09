@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var rotation: Double = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+            Slider(value: $rotation, in: 0...360, step: 0.1)
+                
+        }
     }
 }
 
