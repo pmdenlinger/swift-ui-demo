@@ -13,6 +13,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Hello, world!")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
             Slider(value: $rotation, in: 0...360, step: 0.1)
                 
         }
